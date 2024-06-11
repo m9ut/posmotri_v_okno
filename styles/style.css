@@ -39,14 +39,15 @@ ol {
 
 /*БАЗОВЫЕ СТИЛИ - КОНЕЦ*/
 
-/*MAIM*/
 .page {
   display: flex;
   align-items: center;
 }
 
+/*MAIN*/
+
 .content {
-justify-content: flex-end; 
+align-items: end; 
 width: 1140px;
 display: grid;
 grid-template-columns: 711px 399px;
@@ -55,17 +56,24 @@ gap: 30px;
 
 /*СЕКЦЯ 1*/
 
-.result {
+.result__video-container {
   display: flex;
-  flex-direction: column;
-  gap: 16px;
-  justify-content: flex-end;
+  align-items: stretch;
+  width: 100%;
+height: 386px;
+margin-bottom: 16px;
 }
 
 .search-form{
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  margin: 0;
+}
+
+/*СЕКЦЯ 2*/
+
+.content__details {
+  Gap: 26px;
 }
 
 .content__list {
@@ -74,10 +82,29 @@ gap: 30px;
   overflow-x: hidden;
 }
 
-.content__details {
-  display: flex;
-  Gap: 26px;
+.content__list-item {
+  margin-bottom: 34px;
 }
 
+.content__video-card {
+  display: flex;
+  justify-content: space-between;
+}
 
-/*СЕКЦЯ 2*/
+.content__video-card-description-container {
+/*????*/
+}
+
+.content__video-card-thumbnail {
+  width: 194px;
+height: 103px;
+  object-fit: cover;
+}
+
+/*
+step 1
+top 6 ?
+step 2
+top 2 ?
+top 6 ?
+*/
