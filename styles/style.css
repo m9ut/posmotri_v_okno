@@ -42,41 +42,133 @@ ol {
 .page {
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+button {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.6px;
+  text-align: center;
+  background: transparent;
+  color: white;
 }
 
 /*MAIN*/
 
 .content {
-align-items: end; 
-width: 1140px;
-display: grid;
-grid-template-columns: 711px 399px;
-gap: 30px;
+  align-items: end;
+  width: 1140px;
+  display: grid;
+  grid-template-columns: 711px 399px;
+  gap: 30px;
+}
+
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+fieldset {
+  border: none;
 }
 
 /*СЕКЦЯ 1*/
 
-.result__video-container {
+.result {
   display: flex;
-  align-items: stretch;
-  width: 100%;
-height: 386px;
-margin-bottom: 16px;
+  flex-direction: column;
+  gap: 16px;
 }
 
-.search-form{
+/*ГЛАВНОЕ ВИДЕО*/
+
+.result__video-container {
+  position: relative;
+  width: 100%;
+  height: 386px;
+}
+
+.result__video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* END ГЛАВНОЕ ВИДЕО*/
+
+/*ПОИСКОВАЯ ФОРМА*/
+
+.search-form {
   display: flex;
   justify-content: space-between;
-  margin: 0;
+  align-items: end;
 }
+
+.search-form__fieldset-title {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.6px;
+  text-align: left;
+}
+
+.search-form__checkbox-list {
+  display: inline;
+}
+
+.search-form__pseudo-checkbox {
+  width: 19px;
+  height: 19px;
+  gap: 0px;
+  border: 1px 0px 0px 0px;
+}
+
+.search-form__label {
+  display: inline;
+  cursor: pointer;
+}
+
+.text {
+  appearance: none;
+}
+
+.search-form__submit-button {
+  cursor: pointer;
+}
+
+/*END ПОИСКОВАЯ ФОРМА*/
 
 /*СЕКЦЯ 2*/
 
 .content__details {
+  height: 100%;
+  width: 100%;
   Gap: 26px;
 }
 
+.title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 75px;
+  font-weight: 700;
+  line-height: 70.5px;
+  text-transform: uppercase;
+}
+
+.content__accent {
+  color: darkgray;
+}
+
+/*template*/
+
 .content__list {
+  position: relative;
   height: 298px;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -86,25 +178,87 @@ margin-bottom: 16px;
   margin-bottom: 34px;
 }
 
+.content__card-link {
+  color: white;
+  text-decoration: none;
+}
+
 .content__video-card {
   display: flex;
   justify-content: space-between;
+  align-items: start;
 }
 
 .content__video-card-description-container {
-/*????*/
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.content__video-card-title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: left;
+  text-transform: uppercase;
+  padding-bottom: 6px;
+}
+
+.content__video-card-description {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 16.2px;
 }
 
 .content__video-card-thumbnail {
   width: 194px;
-height: 103px;
+  height: 103px;
   object-fit: cover;
 }
 
-/*
-step 1
-top 6 ?
-step 2
-top 2 ?
-top 6 ?
+.more-button {
+  cursor: pointer;
+}
+
+/*END СЕКЦЯ 2*/
+
+/* comments - check box
+
+step 1. Layout
+top 1 - done
+top 2 - done
+top 3 - done
+top 4 - not shure ?  прижать элементы  к началу контейнера.
+top 5 - done
+top 6 - done
+
+step 2. SIZE
+top 1 - done
+top 2 - done
+top 3 - not shure ? вертикальные отступы между элементами (у всех, кроме последнего)
+top 4 - done
+top 5 - done
+top 6  - wtf? Где текст?
+
+Step 3. preloader
+
+- done
+
+step 4. Text style
+top 1 - not shure? почему он жирный?
+top 2 - done
+top 3 - done
+top 4 - done
+top 5 - done
+top 6 - done
+
+step 5. Elements of Form and Button
+.visually-hidden - done
+
+
+OTHER - ??? to be continued
+
 */
