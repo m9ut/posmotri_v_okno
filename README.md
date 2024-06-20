@@ -1,6 +1,7 @@
+Ссылка на репозиторий: https://github.com/m9ut/posmotri_v_okno
+
 Ссылка на макет: https://www.figma.com/design/QHcvX1RsUI89CulRB7HLk6/%234-%D0%9F%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B8-%D0%B2-%D0%BE%D0%BA%D0%BD%D0%BE?node-id=301-143&t=KI0jmi73k0Z0Tv1m-0
 
-Ссылка на репозиторий: https://github.com/m9ut/posmotri_v_okno-main.git
 
 Проектная работа «Посмотри в окно»
 
