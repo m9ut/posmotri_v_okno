@@ -236,7 +236,7 @@ outline: none;
 }
 
 .content__accent {
-  color: darkgray;
+  color: #545050;
 }
 
 /*template*/
@@ -244,6 +244,7 @@ outline: none;
 .content__list {
   position: relative;
   block-size: 298px;
+  inline-size: 394px;
   display: flex;
   flex-direction: column;
   overflow: auto;
@@ -306,7 +307,6 @@ outline: none;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .content__video-card-description {
@@ -315,6 +315,8 @@ outline: none;
   font-weight: 400;
   line-height: 16.2px;
   text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .content__video-card-thumbnail {
